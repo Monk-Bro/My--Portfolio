@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bib.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <a href="#" class="logo">Portfolio.</a>
+            <Ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </UL>
+        </div>
+        <section class="hero-section">
+            <div class="content">
+                <h2><b>Bibek Biswal</b></h2>
+                <p id="second"><b>I'm a </b>
+                    <id>Frontend Developer!</id>
+                </p>
+                <p>Hi, I'm Bibek Biswal, a developer with big dreams and a bigger curiosity. I specialize in designing
+                    and developing web applications that combine clean code with great user experiences. My portfolio
+                    highlights projects where I've explored modern technologies, solved real-world challenges. </p>
+                <div class="btn-social">
+                    <button><a href="#">Download CV</a></button>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="ME.jpeg" alt="iamge">
+            </div>
+        </section>
+    </div>
+    <section id="About">
+        <div class="skillset">
+            <div class="about">
+                <h2>ABOUT</h2>
+                <p>Welcome to my portfolio here you will find about me my Skills and the beautiful Projects which i have
+                    made or will be going to make in the future.Now check my skillsets and enjoy watching my creations
+                    and drop some feedback about your experiance..
+            </div>
+            <div class="skill-list">
+                <h1>SKILLS</h1>
+                <div class="skill-html">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-js">
+                    <i class="fa-brands fa-js"></i>
+                    <p>Java-Script</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="education">
+            <h1>EDUCATION</h1>
+
+            <div class="education-cards">
+                <div class="school">
+                    <i class="fa fa-school"></i>
+                    <h3>SCHOOL</h3>
+                    <p>Kendrapara Public School</p>
+                    2019
+                </div>
+
+                <div class="college">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3>COLLEGE</h3>
+                    <p>Einstein Science College</p>
+                    2021
+                </div>
+
+                <div class="graduate">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>DEGREE</h3>
+                    <p>Raajdhani Engineering College</p>
+                    PRESENT
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        const skillSection = document.querySelector('.skillset');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        observer.observe(skillSection);
+    </script>
+</body>
+
+</html>
